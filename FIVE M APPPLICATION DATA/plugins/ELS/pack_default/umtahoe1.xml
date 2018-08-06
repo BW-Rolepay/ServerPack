@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- ELS VEHICLE CONFIGURATION FILE -->
-<vcfroot Description="Sample VCF" Author="Luxart" >
+<vcfroot Description="2015 Chevy Tahoe Slicktop/Unmarked by ISP fan12" >
 	<!-- INTERFACE -->
 	<INTERFACE>
-		<LstgActivationType>manual</LstgActivationType>
+		<LstgActivationType>auto</LstgActivationType>
 		<DefaultSirenMode>standby</DefaultSirenMode>
 		<InfoPanelHeaderColor>grey</InfoPanelHeaderColor>
 		<InfoPanelButtonLightColor>orange</InfoPanelButtonLightColor>
@@ -16,30 +16,30 @@
 		<Extra04 IsElsControlled="true" AllowEnvLight="true" Color="blue" OffsetX="0.70" OffsetY="-0.20" OffsetZ="0.50" />
 		<Extra05 IsElsControlled="true" AllowEnvLight="true" Color="red" OffsetX="-0.70" OffsetY="-0.20" OffsetZ="0.50" />
 		<Extra06 IsElsControlled="true" AllowEnvLight="true" Color="blue" OffsetX="0.70" OffsetY="-0.20" OffsetZ="0.50" />
-		<Extra07 IsElsControlled="true" AllowEnvLight="true" Color="amber" OffsetX="-0.40" OffsetY="-0.80" OffsetZ="0.40" />
-		<Extra08 IsElsControlled="true" AllowEnvLight="true" Color="amber" OffsetX="0.00" OffsetY="-0.80" OffsetZ="0.40" />
-		<Extra09 IsElsControlled="true" AllowEnvLight="true" Color="amber" OffsetX="0.40" OffsetY="-0.80" OffsetZ="0.40" />
-		<Extra10 IsElsControlled="true" />
+		<Extra07 IsElsControlled="true" AllowEnvLight="true" Color="blue" OffsetX="-0.40" OffsetY="-0.80" OffsetZ="0.40" />
+		<Extra08 IsElsControlled="false" AllowEnvLight="true" Color="blue" OffsetX="0.00" OffsetY="-0.80" OffsetZ="0.40" />
+		<Extra09 IsElsControlled="true" AllowEnvLight="true" Color="blue" OffsetX="0.40" OffsetY="-0.80" OffsetZ="0.40" />
+		<Extra10 IsElsControlled="false" />
 		<Extra11 IsElsControlled="true" />
-		<Extra12 IsElsControlled="true" />
+		<Extra12 IsElsControlled="false" />
 	</EOVERRIDE>
 	<!-- MISC -->
 	<MISC>
 		<VehicleIsSlicktop>false</VehicleIsSlicktop>
 		<ArrowboardType>off</ArrowboardType>
-		<UseSteadyBurnLights>true</UseSteadyBurnLights>
+		<UseSteadyBurnLights>false</UseSteadyBurnLights>
 		<DfltSirenLtsActivateAtLstg>3</DfltSirenLtsActivateAtLstg>
-		<Takedowns AllowUse="true" Mirrored="false" />
-		<SceneLights AllowUse="true" IlluminateSidesOnly="true" />	
+		<Takedowns AllowUse="true" Mirrored="true" />
+		<SceneLights AllowUse="false" IlluminateSidesOnly="false" />	
 	</MISC>
 	<!-- CRUISE -->
 	<CRUISE>
 		<DisableAtLstg3>true</DisableAtLstg3>
-		<UseExtras Extra1="false" Extra2="false" Extra3="false" Extra4="false" />
+		<UseExtras Extra1="true" Extra2="false" Extra3="false" Extra4="true" />
 	</CRUISE>
 	<!-- AUX CORONAS -->
 	<ACORONAS>
-		<Headlights DfltPattern="0" ColorL="white" ColorR="white" />
+		<Headlights DfltPattern="1" ColorL="white" ColorR="white" />
 		<TailLights DfltPattern="0" ColorL="red" ColorR="red" />
 		<IndicatorsF DfltPattern="0" ColorL="white" ColorR="white" />
 		<IndicatorsB DfltPattern="0" ColorL="red" ColorR="red" />
@@ -51,17 +51,16 @@
 		<ManTone1 AllowUse="true" AudioString="VEHICLES_HORNS_SIREN_1" />
 		<ManTone2 AllowUse="true" AudioString="VEHICLES_HORNS_SIREN_2" />
 		<SrnTone1 AllowUse="true" AudioString="VEHICLES_HORNS_SIREN_1" />
-		<SrnTone2 AllowUse="false" AudioString="VEHICLES_HORNS_SIREN_2" />
+		<SrnTone2 AllowUse="true" AudioString="VEHICLES_HORNS_SIREN_2" />
 		<SrnTone3 AllowUse="true" AudioString="VEHICLES_HORNS_POLICE_WARNING" />
 		<SrnTone4 AllowUse="false" AudioString="VEHICLES_HORNS_AMBULANCE_WARNING" />
-		<AuxSiren AllowUse="false" AudioString="VEHICLES_HORNS_SIREN_1" />
+		<AuxSiren AllowUse="true" AudioString="VEHICLES_HORNS_SIREN_1" />
 		<PanicMde AllowUse="true" AudioString="VEHICLES_HORNS_POLICE_WARNING" />
 	</SOUNDS>
 	<!-- WRNL -->
 	<WRNL LightingFormat="leds" >
 		<PresetPatterns>
-			<Lstg1 Enabled="false" Pattern="2" />
-			<Lstg3 Enabled="true" Pattern="3" />
+			<Lstg3 Enabled="true" Pattern="09" />
 		</PresetPatterns>
 		<ForcedPatterns>
 			<MainHorn Enabled="false" Pattern="0" />
@@ -81,8 +80,8 @@
 	<!-- PRML -->
 	<PRML LightingFormat="leds" ExtrasActiveAtLstg2="1and4" >
 		<PresetPatterns>
-			<Lstg2 Enabled="false" Pattern="133" />
-			<Lstg3 Enabled="true" Pattern="133" />
+			<Lstg2 Enabled="true" Pattern="024" />
+			<Lstg3 Enabled="true" Pattern="024" />
 		</PresetPatterns>
 		<ForcedPatterns>
 			<MainHorn Enabled="false" Pattern="0" />
@@ -100,11 +99,11 @@
 		</ScanPatternCustomPool>
 	</PRML>
 	<!-- SECL -->
-	<SECL LightingFormat="traf" DisableAtLstg3="false" >
+	<SECL LightingFormat="leds" DisableAtLstg3="false" >
 		<PresetPatterns>
-			<Lstg1 Enabled="true" Pattern="12" />
-			<Lstg2 Enabled="true" Pattern="12" />
-			<Lstg3 Enabled="true" Pattern="16" />
+			<Lstg1 Enabled="true" Pattern="95" />
+			<Lstg2 Enabled="true" Pattern="95" />
+			<Lstg3 Enabled="true" Pattern="95" />
 		</PresetPatterns>
 		<ForcedPatterns>
 			<MainHorn Enabled="false" Pattern="0" />
