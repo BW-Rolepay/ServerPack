@@ -61,7 +61,7 @@
 	<WRNL LightingFormat="leds" >
 		<PresetPatterns>
 			<Lstg1 Enabled="false" Pattern="2" />
-			<Lstg3 Enabled="true" Pattern="3" />
+			<Lstg3 Enabled="true" Pattern="2" />
 		</PresetPatterns>
 		<ForcedPatterns>
 			<MainHorn Enabled="false" Pattern="0" />
@@ -81,8 +81,8 @@
 	<!-- PRML -->
 	<PRML LightingFormat="leds" ExtrasActiveAtLstg2="1and4" >
 		<PresetPatterns>
-			<Lstg2 Enabled="false" Pattern="67" />
-			<Lstg3 Enabled="true" Pattern="67" />
+			<Lstg2 Enabled="false" Pattern="10" />
+			<Lstg3 Enabled="true" Pattern="10" />
 		</PresetPatterns>
 		<ForcedPatterns>
 			<MainHorn Enabled="false" Pattern="0" />
@@ -104,7 +104,7 @@
 		<PresetPatterns>
 			<Lstg1 Enabled="true" Pattern="12" />
 			<Lstg2 Enabled="true" Pattern="12" />
-			<Lstg3 Enabled="true" Pattern="16" />
+			<Lstg3 Enabled="true" Pattern="12" />
 		</PresetPatterns>
 		<ForcedPatterns>
 			<MainHorn Enabled="false" Pattern="0" />
