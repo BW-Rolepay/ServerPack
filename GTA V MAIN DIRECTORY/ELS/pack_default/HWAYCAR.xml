@@ -27,15 +27,15 @@
 	<MISC>
 		<VehicleIsSlicktop>false</VehicleIsSlicktop>
 		<ArrowboardType>off</ArrowboardType>
-		<UseSteadyBurnLights>false</UseSteadyBurnLights>
+		<UseSteadyBurnLights>true</UseSteadyBurnLights>
 		<DfltSirenLtsActivateAtLstg>3</DfltSirenLtsActivateAtLstg>
-		<Takedowns AllowUse="true" Mirrored="true" />
+		<Takedowns AllowUse="true" Mirrored="false" />
 		<SceneLights AllowUse="true" IlluminateSidesOnly="true" />	
 	</MISC>
 	<!-- CRUISE -->
 	<CRUISE>
 		<DisableAtLstg3>true</DisableAtLstg3>
-		<UseExtras Extra1="false" Extra2="false" Extra3="false" Extra4="true" />
+		<UseExtras Extra1="false" Extra2="false" Extra3="false" Extra4="false" />
 	</CRUISE>
 	<!-- AUX CORONAS -->
 	<ACORONAS>
@@ -55,12 +55,13 @@
 		<SrnTone3 AllowUse="false" AudioString="VEHICLES_HORNS_POLICE_WARNING" />
 		<SrnTone4 AllowUse="false" AudioString="VEHICLES_HORNS_AMBULANCE_WARNING" />
 		<AuxSiren AllowUse="false" AudioString="VEHICLES_HORNS_SIREN_1" />
-		<PanicMde AllowUse="false" AudioString="VEHICLES_HORNS_POLICE_WARNING" />
+		<PanicMde AllowUse="true" AudioString="VEHICLES_HORNS_POLICE_WARNING" />
 	</SOUNDS>
 	<!-- WRNL -->
-	<WRNL LightingFormat="chp" >
+	<WRNL LightingFormat="leds" >
 		<PresetPatterns>
-			<Lstg3 Enabled="true" Pattern="3" />
+			<Lstg1 Enabled="true" Pattern="0" />
+			<Lstg3 Enabled="true" Pattern="0" />
 		</PresetPatterns>
 		<ForcedPatterns>
 			<MainHorn Enabled="false" Pattern="0" />
@@ -78,10 +79,10 @@
 		</ScanPatternCustomPool>
 	</WRNL>
 	<!-- PRML -->
-	<PRML LightingFormat="chp" ExtrasActiveAtLstg2="1and4" >
+	<PRML LightingFormat="leds" ExtrasActiveAtLstg2="1and4" >
 		<PresetPatterns>
-			<Lstg2 Enabled="true" Pattern="2" />
-			<Lstg3 Enabled="true" Pattern="2" />
+			<Lstg2 Enabled="false" Pattern="10" />
+			<Lstg3 Enabled="true" Pattern="10" />
 		</PresetPatterns>
 		<ForcedPatterns>
 			<MainHorn Enabled="false" Pattern="0" />
@@ -99,11 +100,11 @@
 		</ScanPatternCustomPool>
 	</PRML>
 	<!-- SECL -->
-	<SECL LightingFormat="chp" DisableAtLstg3="false" >
+	<SECL LightingFormat="traf" DisableAtLstg3="false" >
 		<PresetPatterns>
-			<Lstg1 Enabled="true" Pattern="12" />
-			<Lstg2 Enabled="true" Pattern="12" />
-			<Lstg3 Enabled="true" Pattern="12" />
+			<Lstg1 Enabled="false" Pattern="13" />
+			<Lstg2 Enabled="true" Pattern="13" />
+			<Lstg3 Enabled="true" Pattern="13" />
 		</PresetPatterns>
 		<ForcedPatterns>
 			<MainHorn Enabled="false" Pattern="0" />
