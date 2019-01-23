@@ -29,13 +29,13 @@
 		<ArrowboardType>off</ArrowboardType>
 		<UseSteadyBurnLights>true</UseSteadyBurnLights>
 		<DfltSirenLtsActivateAtLstg>3</DfltSirenLtsActivateAtLstg>
-		<Takedowns AllowUse="true" Mirrored="false" />
+		<Takedowns AllowUse="true" Mirrored="true" />
 		<SceneLights AllowUse="true" IlluminateSidesOnly="true" />	
 	</MISC>
 	<!-- CRUISE -->
 	<CRUISE>
 		<DisableAtLstg3>true</DisableAtLstg3>
-		<UseExtras Extra1="false" Extra2="false" Extra3="false" Extra4="false" />
+		<UseExtras Extra1="true" Extra2="false" Extra3="false" Extra4="true" />
 	</CRUISE>
 	<!-- AUX CORONAS -->
 	<ACORONAS>
@@ -43,7 +43,7 @@
 		<TailLights DfltPattern="0" ColorL="red" ColorR="red" />
 		<IndicatorsF DfltPattern="0" ColorL="white" ColorR="white" />
 		<IndicatorsB DfltPattern="0" ColorL="red" ColorR="red" />
-		<ReverseLights DfltPattern="0" ColorL="white" ColorR="white" />
+		<ReverseLights DfltPattern="14" ColorL="white" ColorR="white" />
 	</ACORONAS>
 	<!-- SOUNDS -->
 	<SOUNDS>
@@ -61,13 +61,13 @@
 	<WRNL LightingFormat="leds" >
 		<PresetPatterns>
 			<Lstg1 Enabled="false" Pattern="2" />
-			<Lstg3 Enabled="true" Pattern="2" />
+			<Lstg3 Enabled="true" Pattern="3" />
 		</PresetPatterns>
 		<ForcedPatterns>
 			<MainHorn Enabled="false" Pattern="0" />
 			<SrnTone1 Enabled="false" Pattern="0" />
 			<SrnTone2 Enabled="false" Pattern="0" />
-			<SrnTone3 Enabled="false" Pattern="0" />
+			<SrnTone3 Enabled="false" Pattern="22" />
 			<SrnTone4 Enabled="false" Pattern="0" />
 			<PanicMde Enabled="false" Pattern="0" />
 			<OutOfVeh Enabled="false" Pattern="0" />
@@ -81,14 +81,14 @@
 	<!-- PRML -->
 	<PRML LightingFormat="leds" ExtrasActiveAtLstg2="1and4" >
 		<PresetPatterns>
-			<Lstg2 Enabled="false" Pattern="67" />
-			<Lstg3 Enabled="true" Pattern="67" />
+			<Lstg2 Enabled="false" Pattern="140" />
+			<Lstg3 Enabled="true" Pattern="0" />
 		</PresetPatterns>
 		<ForcedPatterns>
 			<MainHorn Enabled="false" Pattern="0" />
 			<SrnTone1 Enabled="false" Pattern="0" />
 			<SrnTone2 Enabled="false" Pattern="0" />
-			<SrnTone3 Enabled="false" Pattern="0" />
+			<SrnTone3 Enabled="false" Pattern="139" />
 			<SrnTone4 Enabled="false" Pattern="0" />
 			<PanicMde Enabled="false" Pattern="0" />
 			<OutOfVeh Enabled="false" Pattern="0" />
@@ -100,10 +100,10 @@
 		</ScanPatternCustomPool>
 	</PRML>
 	<!-- SECL -->
-	<SECL LightingFormat="traf" DisableAtLstg3="false" >
+	<SECL LightingFormat="traf" DisableAtLstg3="true" >
 		<PresetPatterns>
 			<Lstg1 Enabled="true" Pattern="12" />
-			<Lstg2 Enabled="true" Pattern="12" />
+			<Lstg2 Enabled="true" Pattern="16" />
 			<Lstg3 Enabled="true" Pattern="16" />
 		</PresetPatterns>
 		<ForcedPatterns>

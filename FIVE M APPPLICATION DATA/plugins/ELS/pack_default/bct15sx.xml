@@ -16,16 +16,16 @@
 		<Extra04 IsElsControlled="true" AllowEnvLight="true" Color="blue" OffsetX="0.70" OffsetY="-0.20" OffsetZ="0.50" />
 		<Extra05 IsElsControlled="true" AllowEnvLight="true" Color="red" OffsetX="-0.70" OffsetY="-0.20" OffsetZ="0.50" />
 		<Extra06 IsElsControlled="true" AllowEnvLight="true" Color="blue" OffsetX="0.70" OffsetY="-0.20" OffsetZ="0.50" />
-		<Extra07 IsElsControlled="true" AllowEnvLight="true" Color="red" OffsetX="-0.40" OffsetY="-0.80" OffsetZ="0.40" />
+		<Extra07 IsElsControlled="true" AllowEnvLight="true" Color="amber" OffsetX="-0.40" OffsetY="-0.80" OffsetZ="0.40" />
 		<Extra08 IsElsControlled="true" AllowEnvLight="true" Color="amber" OffsetX="0.00" OffsetY="-0.80" OffsetZ="0.40" />
-		<Extra09 IsElsControlled="true" AllowEnvLight="true" Color="blue" OffsetX="0.40" OffsetY="-0.80" OffsetZ="0.40" />
+		<Extra09 IsElsControlled="true" AllowEnvLight="true" Color="amber" OffsetX="0.40" OffsetY="-0.80" OffsetZ="0.40" />
 		<Extra10 IsElsControlled="true" />
 		<Extra11 IsElsControlled="true" />
-		<Extra12 IsElsControlled="false" />
+		<Extra12 IsElsControlled="true" />
 	</EOVERRIDE>
 	<!-- MISC -->
 	<MISC>
-		<VehicleIsSlicktop>true</VehicleIsSlicktop>
+		<VehicleIsSlicktop>false</VehicleIsSlicktop>
 		<ArrowboardType>off</ArrowboardType>
 		<UseSteadyBurnLights>true</UseSteadyBurnLights>
 		<DfltSirenLtsActivateAtLstg>3</DfltSirenLtsActivateAtLstg>
@@ -43,7 +43,7 @@
 		<TailLights DfltPattern="0" ColorL="red" ColorR="red" />
 		<IndicatorsF DfltPattern="0" ColorL="white" ColorR="white" />
 		<IndicatorsB DfltPattern="0" ColorL="red" ColorR="red" />
-		<ReverseLights DfltPattern="0" ColorL="white" ColorR="white" />
+		<ReverseLights DfltPattern="14" ColorL="white" ColorR="white" />
 	</ACORONAS>
 	<!-- SOUNDS -->
 	<SOUNDS>
@@ -61,13 +61,13 @@
 	<WRNL LightingFormat="leds" >
 		<PresetPatterns>
 			<Lstg1 Enabled="false" Pattern="2" />
-			<Lstg3 Enabled="true" Pattern="2" />
+			<Lstg3 Enabled="true" Pattern="3" />
 		</PresetPatterns>
 		<ForcedPatterns>
 			<MainHorn Enabled="false" Pattern="0" />
 			<SrnTone1 Enabled="false" Pattern="0" />
-			<SrnTone2 Enabled="false" Pattern="0" />
-			<SrnTone3 Enabled="false" Pattern="0" />
+			<SrnTone2 Enabled="false" Pattern="22" />
+			<SrnTone3 Enabled="false" Pattern="22" />
 			<SrnTone4 Enabled="false" Pattern="0" />
 			<PanicMde Enabled="false" Pattern="0" />
 			<OutOfVeh Enabled="false" Pattern="0" />
@@ -81,14 +81,14 @@
 	<!-- PRML -->
 	<PRML LightingFormat="leds" ExtrasActiveAtLstg2="1and4" >
 		<PresetPatterns>
-			<Lstg2 Enabled="false" Pattern="10" />
-			<Lstg3 Enabled="true" Pattern="10" />
+			<Lstg2 Enabled="true" Pattern="140" />
+			<Lstg3 Enabled="true" Pattern="0" />
 		</PresetPatterns>
 		<ForcedPatterns>
 			<MainHorn Enabled="false" Pattern="0" />
 			<SrnTone1 Enabled="false" Pattern="0" />
-			<SrnTone2 Enabled="false" Pattern="0" />
-			<SrnTone3 Enabled="false" Pattern="0" />
+			<SrnTone2 Enabled="false" Pattern="139" />
+			<SrnTone3 Enabled="false" Pattern="139" />
 			<SrnTone4 Enabled="false" Pattern="0" />
 			<PanicMde Enabled="false" Pattern="0" />
 			<OutOfVeh Enabled="false" Pattern="0" />
@@ -102,9 +102,9 @@
 	<!-- SECL -->
 	<SECL LightingFormat="traf" DisableAtLstg3="true" >
 		<PresetPatterns>
-			<Lstg1 Enabled="true" Pattern="3" />
-			<Lstg2 Enabled="true" Pattern="3" />
-			<Lstg3 Enabled="true" Pattern="3" />
+			<Lstg1 Enabled="true" Pattern="12" />
+			<Lstg2 Enabled="true" Pattern="16" />
+			<Lstg3 Enabled="true" Pattern="16" />
 		</PresetPatterns>
 		<ForcedPatterns>
 			<MainHorn Enabled="false" Pattern="0" />

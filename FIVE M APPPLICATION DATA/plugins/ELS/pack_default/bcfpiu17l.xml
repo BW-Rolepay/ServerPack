@@ -16,16 +16,16 @@
 		<Extra04 IsElsControlled="true" AllowEnvLight="true" Color="blue" OffsetX="0.70" OffsetY="-0.20" OffsetZ="0.50" />
 		<Extra05 IsElsControlled="true" AllowEnvLight="true" Color="red" OffsetX="-0.70" OffsetY="-0.20" OffsetZ="0.50" />
 		<Extra06 IsElsControlled="true" AllowEnvLight="true" Color="blue" OffsetX="0.70" OffsetY="-0.20" OffsetZ="0.50" />
-		<Extra07 IsElsControlled="true" AllowEnvLight="true" Color="red" OffsetX="-0.40" OffsetY="-0.80" OffsetZ="0.40" />
+		<Extra07 IsElsControlled="true" AllowEnvLight="true" Color="amber" OffsetX="-0.40" OffsetY="-0.80" OffsetZ="0.40" />
 		<Extra08 IsElsControlled="true" AllowEnvLight="true" Color="amber" OffsetX="0.00" OffsetY="-0.80" OffsetZ="0.40" />
-		<Extra09 IsElsControlled="true" AllowEnvLight="true" Color="blue" OffsetX="0.40" OffsetY="-0.80" OffsetZ="0.40" />
+		<Extra09 IsElsControlled="true" AllowEnvLight="true" Color="amber" OffsetX="0.40" OffsetY="-0.80" OffsetZ="0.40" />
 		<Extra10 IsElsControlled="true" />
 		<Extra11 IsElsControlled="true" />
-		<Extra12 IsElsControlled="false" />
+		<Extra12 IsElsControlled="true" />
 	</EOVERRIDE>
 	<!-- MISC -->
 	<MISC>
-		<VehicleIsSlicktop>true</VehicleIsSlicktop>
+		<VehicleIsSlicktop>false</VehicleIsSlicktop>
 		<ArrowboardType>off</ArrowboardType>
 		<UseSteadyBurnLights>true</UseSteadyBurnLights>
 		<DfltSirenLtsActivateAtLstg>3</DfltSirenLtsActivateAtLstg>
@@ -35,7 +35,7 @@
 	<!-- CRUISE -->
 	<CRUISE>
 		<DisableAtLstg3>true</DisableAtLstg3>
-		<UseExtras Extra1="true" Extra2="false" Extra3="false" Extra4="true" />
+		<UseExtras Extra1="false" Extra2="false" Extra3="false" Extra4="false" />
 	</CRUISE>
 	<!-- AUX CORONAS -->
 	<ACORONAS>
@@ -51,8 +51,8 @@
 		<ManTone1 AllowUse="true" AudioString="VEHICLES_HORNS_SIREN_1" />
 		<ManTone2 AllowUse="true" AudioString="VEHICLES_HORNS_SIREN_2" />
 		<SrnTone1 AllowUse="true" AudioString="VEHICLES_HORNS_SIREN_1" />
-		<SrnTone2 AllowUse="false" AudioString="VEHICLES_HORNS_SIREN_2" />
-		<SrnTone3 AllowUse="true" AudioString="VEHICLES_HORNS_POLICE_WARNING" />
+		<SrnTone2 AllowUse="true" AudioString="VEHICLES_HORNS_SIREN_2" />
+		<SrnTone3 AllowUse="false" AudioString="VEHICLES_HORNS_POLICE_WARNING" />
 		<SrnTone4 AllowUse="false" AudioString="VEHICLES_HORNS_AMBULANCE_WARNING" />
 		<AuxSiren AllowUse="false" AudioString="VEHICLES_HORNS_SIREN_1" />
 		<PanicMde AllowUse="true" AudioString="VEHICLES_HORNS_POLICE_WARNING" />
@@ -60,8 +60,8 @@
 	<!-- WRNL -->
 	<WRNL LightingFormat="leds" >
 		<PresetPatterns>
-			<Lstg1 Enabled="false" Pattern="2" />
-			<Lstg3 Enabled="true" Pattern="2" />
+			<Lstg1 Enabled="true" Pattern="0" />
+			<Lstg3 Enabled="true" Pattern="0" />
 		</PresetPatterns>
 		<ForcedPatterns>
 			<MainHorn Enabled="false" Pattern="0" />
@@ -102,9 +102,9 @@
 	<!-- SECL -->
 	<SECL LightingFormat="traf" DisableAtLstg3="true" >
 		<PresetPatterns>
-			<Lstg1 Enabled="true" Pattern="3" />
-			<Lstg2 Enabled="true" Pattern="3" />
-			<Lstg3 Enabled="true" Pattern="3" />
+			<Lstg1 Enabled="false" Pattern="13" />
+			<Lstg2 Enabled="true" Pattern="13" />
+			<Lstg3 Enabled="true" Pattern="13" />
 		</PresetPatterns>
 		<ForcedPatterns>
 			<MainHorn Enabled="false" Pattern="0" />
